@@ -18,10 +18,12 @@
 |<img width="32" height="32" alt="imgir-icon-colour" src="https://github.com/user-attachments/assets/61932d61-663a-4b3b-a046-71765a14df0d" />|`http://`, `https://`|`imgur.com`, `*.imgur.com`|`*`|Rimgo|`rimgo.bloat.cat`|`True`|
 |<img width="32" height="32" alt="medium-icon-white" src="https://github.com/user-attachments/assets/051d2f45-54ff-4706-8af4-06b3a871b43a" />|`http://`, `https://`|`medium.com`, `*.medium.com`|`*`|Scribe|`scribe.rip`|`True`|
 |<img width="32" height="32" alt="pinterest-badge-red" src="https://github.com/user-attachments/assets/1b008975-9983-4d45-ab7e-3be9ad501145" />|`http://`, `https://`|`pin.it`, `pinterest.com`, `*.pinterest.com`|`*`|Binternet|`binternet.revvy.de`|`True`|
+|<img width="32" height="32" alt="quora-colour-icon" src="https://github.com/user-attachments/assets/2c7f0d4f-7667-47cf-b81b-7541c5011f0d" />|`http://`, `https://`|`quora.com`, `*.quora.com`|`*`|Quetre|`quetre.iket.me`|`True`|
 |<img width="32" height="32" alt="reddit-icon-colour" src="https://github.com/user-attachments/assets/aca193d0-fd46-4f47-ace9-53433b8ff921" />|`http://`, `https://`|`reddit.com`, `*.reddit.com`, `old.reddit.com` excluded|`*`|Redlib|`redlib.perennialte.ch`|`True`|
+|<img width="32" height="32" alt="stack-overflow-colour" src="https://github.com/user-attachments/assets/29367241-ac4c-4136-9fe0-d478862ef6e7" />|`http://`, `https://`|`stackoverflow.com`, `*.stackoverflow.com`, `old.reddit.com`|`*`|AnonymousOverflow|`overflow.adminforge.de`|`True`|
 |<img width="32" height="32" alt="glitch-flat-purple" src="https://github.com/user-attachments/assets/041adec4-6e39-485a-808b-d2bdc5270a04" />|`http://`, `https://`|`twitch.tv`, `*.twitch.tv`|`*`|SafeTwitch|`safetwitch.drgns.space`|`True`|
 |<img width="32" height="32" alt="twitter-logo-white" src="https://github.com/user-attachments/assets/597c843e-9894-4185-8dcc-6da4fffd1a65" />|`http://`, `https://`|`x.com`, `*.x.com`, `nitter.net` only for broadcasts|`*`, `i/broadcasts/*` only redirected for Nitter|Nitter|`nitter.net`|`True`|
-|<img width="32" height="22" alt="youtube-color-icon" src="https://github.com/user-attachments/assets/96929b09-295d-4d9e-8981-b538cf58249d" />|`http://`, `https://`|`youtu.be`, `youtube.com`, `*.youtube.com`|`*`|Invidious|`inv.nadeko.net`|`True`|
+|<img width="32" height="22" alt="youtube-colour-icon" src="https://github.com/user-attachments/assets/96929b09-295d-4d9e-8981-b538cf58249d" />|`http://`, `https://`|`youtu.be`, `youtube.com`, `*.youtube.com`|`*`|Invidious|`inv.nadeko.net`|`True`|
 
 # Browser Support
 
