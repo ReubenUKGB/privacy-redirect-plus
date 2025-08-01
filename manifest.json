@@ -35,7 +35,9 @@
     "*://nitter.net/*",
     "*://pin.it/*",
     "*://*.pinterest.com/*",
+    "*://*.quora.com/*",
     "*://*.reddit.com/*",
+    "*://*.stackoverflow.com/*",
     "*://*.twitch.tv/*",
     "*://*.x.com/*",
     "*://youtu.be/*",
@@ -69,9 +71,19 @@
         "path": "config/pinterest_rules.json"
       },
       {
+        "id": "quora_redirect_ruleset",
+        "enabled": true,
+        "path": "config/quora_rules.json"
+      },
+      {
         "id": "reddit_redirect_ruleset",
         "enabled": true,
         "path": "config/reddit_rules.json"
+      },
+      {
+        "id": "stackoverflow_redirect_ruleset",
+        "enabled": true,
+        "path": "config/stackoverflow_rules.json"
       },
       {
         "id": "twitch_redirect_ruleset",

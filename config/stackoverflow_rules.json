@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https?://([a-z0-9-]+\\.)*stackoverflow\\.com/.*",
+      "resourceTypes": ["main_frame"]
+    },
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "host": "overflow.adminforge.de"
+        }
+      }
+    }
+  }
+]
