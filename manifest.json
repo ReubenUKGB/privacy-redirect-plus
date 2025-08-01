@@ -1,0 +1,93 @@
+{
+  "name": "Simple Privacy Redirect",
+  "description": "A lightweight tool that ensures requests to various platforms redirect to their privacy-focused alternative frontends.",
+  "version": "1.1",
+  "manifest_version": 3,
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{9063c2e9-e07c-4c2c-9646-cfe7ca8d0498}",
+      "strict_min_version": "130.0"
+    }
+  },
+  "icons": {
+    "16": "img/icon16.png",
+    "32": "img/icon32.png",
+    "48": "img/icon48.png",
+    "64": "img/icon64.png",
+    "96": "img/icon96.png",
+    "128": "img/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://x.com/i/broadcasts/*",
+        "https://mobile.x.com/i/broadcasts/*"
+      ],
+      "css": ["styles/x-main.css"]
+    }
+  ],
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": [
+    "*://*.github.com/*",
+    "*://*.goodreads.com/*",
+    "*://*.imgur.com/*",
+    "*://*.medium.com/*",
+    "*://nitter.net/*",
+    "*://pin.it/*",
+    "*://*.pinterest.com/*",
+    "*://*.reddit.com/*",
+    "*://*.twitch.tv/*",
+    "*://*.x.com/*",
+    "*://youtu.be/*",
+    "*://*.youtube.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "github_redirect_ruleset",
+        "enabled": true,
+        "path": "config/github_rules.json"
+      },
+      {
+        "id": "goodreads_redirect_ruleset",
+        "enabled": true,
+        "path": "config/goodreads_rules.json"
+      },
+      {
+        "id": "imgur_redirect_ruleset",
+        "enabled": true,
+        "path": "config/imgur_rules.json"
+      },
+      {
+        "id": "medium_redirect_ruleset",
+        "enabled": true,
+        "path": "config/medium_rules.json"
+      },
+      {
+        "id": "pinterest_redirect_ruleset",
+        "enabled": true,
+        "path": "config/pinterest_rules.json"
+      },
+      {
+        "id": "reddit_redirect_ruleset",
+        "enabled": true,
+        "path": "config/reddit_rules.json"
+      },
+      {
+        "id": "twitch_redirect_ruleset",
+        "enabled": true,
+        "path": "config/twitch_rules.json"
+      },
+      {
+        "id": "x_redirect_ruleset",
+        "enabled": true,
+        "path": "config/x_rules.json"
+      },
+      {
+        "id": "youtube_redirect_ruleset",
+        "enabled": true,
+        "path": "config/youtube_rules.json"
+      }
+    ]
+  }
+}

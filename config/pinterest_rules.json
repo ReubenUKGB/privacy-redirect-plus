@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https?://([a-z0-9-]+\\.)*pinterest\\.com/.*",
+      "resourceTypes": ["main_frame"]
+    },
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "host": "binternet.revvy.de"
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https?://pin\\.it/.*",
+      "resourceTypes": ["main_frame"]
+    },
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "host": "binternet.revvy.de"
+        }
+      }
+    }
+  }
+]

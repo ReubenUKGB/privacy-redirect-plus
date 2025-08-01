@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https?://([a-z0-9-]+\\.)*youtube\\.com/.*",
+      "resourceTypes": ["main_frame"]
+    },
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "host": "inv.nadeko.net"
+        }
+      }
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https?://youtu\\.be/.*",
+      "resourceTypes": ["main_frame"]
+    },
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "host": "inv.nadeko.net"
+        }
+      }
+    }
+  }
+]

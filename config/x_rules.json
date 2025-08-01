@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "regexFilter": "^https?://([a-z0-9-]+\\.)*x\\.com/i/broadcasts/.*",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https?://([a-z0-9-]+\\.)*x\\.com/.*",
+      "resourceTypes": ["main_frame"]
+    },
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "host": "nitter.net"
+        }
+      }
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https?://nitter\\.net/i/broadcasts/.*",
+      "resourceTypes": ["main_frame"]
+    },
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "host": "x.com"
+        }
+      }
+    }
+  }
+]

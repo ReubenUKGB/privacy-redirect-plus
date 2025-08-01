@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "priority": 2,
+    "action": {
+      "type": "allow"
+    },
+    "condition": {
+      "regexFilter": "^https?://old\\.reddit\\.com/.*",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "condition": {
+      "regexFilter": "^https?://([a-z0-9-]+\\.)*reddit\\.com/.*",
+      "resourceTypes": ["main_frame"]
+    },
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": {
+          "host": "redlib.perennialte.ch"
+        }
+      }
+    }
+  }
+]
